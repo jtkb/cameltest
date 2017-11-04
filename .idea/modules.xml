@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/camel/camel.iml" filepath="$PROJECT_DIR$/camel/camel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cameltest.iml" filepath="$PROJECT_DIR$/cameltest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simpleservice/simpleservice.iml" filepath="$PROJECT_DIR$/simpleservice/simpleservice.iml" />
+    </modules>
+  </component>
+</project>
