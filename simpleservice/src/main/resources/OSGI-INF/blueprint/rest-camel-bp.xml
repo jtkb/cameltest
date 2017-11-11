@@ -35,9 +35,6 @@
 
     <bean id="camelServlet" class="org.apache.camel.component.servlet.CamelHttpTransportServlet"/>
 
-    <!--<bean id="userService" class="com.javatechnics.camel.UserServiceImpl" scope="singleton" />-->
-
-    <!--<reference id="userServiceRef" interface="com.javatechnics.camel.service.UserService" availability="optional"/>-->
     <camelContext xmlns="http://camel.apache.org/schema/blueprint" id="testRouteContext">
         <routeContextRef ref="myRoutes" />
         <!-- configure rest to use the camel-servlet component, and use json binding mode -->

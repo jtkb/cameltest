@@ -7,7 +7,7 @@
           <property key="Export-Package" value="com.javatechnics.camel.service" />
           <property key="Bundle-Blueprint-Annotation" value="true" />
           <property key="Bundle-Name" value="simple-service" />
-          <property key="Include-Resource" value="OSGI-INF/blueprint/blueprint.xml=$MODULE_DIR$/src/main/resources/OSGI-INF/blueprint/blueprint.xml,OSGI-INF/blueprint/route-camel-bp.xml=$MODULE_DIR$/src/main/resources/OSGI-INF/blueprint/route-camel-bp.xml,OSGI-INF/blueprint/rest-camel-bp.xml=$MODULE_DIR$/src/main/resources/OSGI-INF/blueprint/rest-camel-bp.xml,OSGI-INF/blueprint/camel-beans-bp.xml=$MODULE_DIR$/src/main/resources/OSGI-INF/blueprint/camel-beans-bp.xml" />
+          <property key="Include-Resource" value="OSGI-INF/blueprint/route-camel-bp.xml=$MODULE_DIR$/src/main/resources/OSGI-INF/blueprint/route-camel-bp.xml,OSGI-INF/blueprint/rest-camel-bp.xml=$MODULE_DIR$/src/main/resources/OSGI-INF/blueprint/rest-camel-bp.xml" />
         </additionalProperties>
         <additionalJARContents />
       </configuration>
