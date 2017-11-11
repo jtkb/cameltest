@@ -6,14 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="api" />
         <module name="camel" />
         <module name="simpleservice" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="api" target="1.5" />
       <module name="camel" target="1.5" />
       <module name="cameltest" target="1.5" />
-      <module name="simpleservice" target="1.5" />
+      <module name="simpleservice" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>

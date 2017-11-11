@@ -1,15 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5">
+  <component name="FacetManager">
+    <facet type="Osmorc" name="OSGi">
+      <configuration manifestGenerationMode="OsmorcControlled" manifestLocation="" jarfileLocation="simple-service-1.0.0-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="com.javatechnics.simple-service" bundleVersion="1.0.0.SNAPSHOT" ignoreFilePattern="" useProjectDefaultManifestFileLocation="true" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
+        <additionalProperties>
+          <property key="Export-Package" value="com.javatechnics.camel.service" />
+          <property key="Bundle-Blueprint-Annotation" value="true" />
+          <property key="Bundle-Name" value="simple-service" />
+          <property key="Include-Resource" value="OSGI-INF/blueprint/blueprint.xml=$MODULE_DIR$/src/main/resources/OSGI-INF/blueprint/blueprint.xml,OSGI-INF/blueprint/route-camel-bp.xml=$MODULE_DIR$/src/main/resources/OSGI-INF/blueprint/route-camel-bp.xml,OSGI-INF/blueprint/rest-camel-bp.xml=$MODULE_DIR$/src/main/resources/OSGI-INF/blueprint/rest-camel-bp.xml,OSGI-INF/blueprint/camel-beans-bp.xml=$MODULE_DIR$/src/main/resources/OSGI-INF/blueprint/camel-beans-bp.xml" />
+        </additionalProperties>
+        <additionalJARContents />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="TEST" name="Maven: junit:junit:3.8.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-core:2.20.0" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.22" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.xml.bind:jaxb-core:2.2.11" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.xml.bind:jaxb-impl:2.2.11" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-core-osgi:2.20.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-blueprint:2.20.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-core-xml:2.20.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-servlet:2.20.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-http-common:2.20.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-jackson:2.20.0" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.8.10" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.0" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.8.10" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.8.10" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.aries.blueprint:org.apache.aries.blueprint.annotation.api:1.0.1" level="project" />
   </component>
 </module>

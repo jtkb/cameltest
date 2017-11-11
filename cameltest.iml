@@ -8,5 +8,20 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-core:2.20.0" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.22" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.xml.bind:jaxb-core:2.2.11" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.xml.bind:jaxb-impl:2.2.11" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-core-osgi:2.20.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-blueprint:2.20.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-core-xml:2.20.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-servlet:2.20.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-http-common:2.20.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-jackson:2.20.0" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.8.10" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.0" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.8.10" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.8.10" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.aries.blueprint:org.apache.aries.blueprint.annotation.api:1.0.1" level="project" />
   </component>
 </module>

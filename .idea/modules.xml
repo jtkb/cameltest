@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/api/api.iml" filepath="$PROJECT_DIR$/api/api.iml" />
       <module fileurl="file://$PROJECT_DIR$/camel/camel.iml" filepath="$PROJECT_DIR$/camel/camel.iml" />
       <module fileurl="file://$PROJECT_DIR$/cameltest.iml" filepath="$PROJECT_DIR$/cameltest.iml" />
       <module fileurl="file://$PROJECT_DIR$/simpleservice/simpleservice.iml" filepath="$PROJECT_DIR$/simpleservice/simpleservice.iml" />
