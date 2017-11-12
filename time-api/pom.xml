@@ -7,32 +7,14 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>simple-service</artifactId>
+    <artifactId>time-api</artifactId>
     <packaging>bundle</packaging>
 
-    <name>simple-service</name>
+    <name>time-api</name>
     <url>http://maven.apache.org</url>
-    <dependencies>
-        <dependency>
-            <groupId>com.javatechnics</groupId>
-            <artifactId>api</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.javatechnics</groupId>
-            <artifactId>time-api</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.javatechnics</groupId>
-            <artifactId>time-api</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <direct.getUser>direct:getUser</direct.getUser>
     </properties>
 
     <build>
@@ -44,11 +26,12 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Export-Package>com.javatechnics.camel.service</Export-Package>
+                        <Export-Package>com.javatechnics.camel.time.dto</Export-Package>
                         <Bundle-Blueprint-Annotation>true</Bundle-Blueprint-Annotation>
                     </instructions>
                 </configuration>
             </plugin>
         </plugins>
     </build>
+
 </project>

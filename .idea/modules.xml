@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/camel/camel.iml" filepath="$PROJECT_DIR$/camel/camel.iml" />
       <module fileurl="file://$PROJECT_DIR$/cameltest.iml" filepath="$PROJECT_DIR$/cameltest.iml" />
       <module fileurl="file://$PROJECT_DIR$/simpleservice/simpleservice.iml" filepath="$PROJECT_DIR$/simpleservice/simpleservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/time-api/time-api.iml" filepath="$PROJECT_DIR$/time-api/time-api.iml" />
     </modules>
   </component>
 </project>

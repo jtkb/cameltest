@@ -8,6 +8,7 @@
         <module>simpleservice</module>
         <module>camel</module>
         <module>api</module>
+        <module>time-api</module>
     </modules>
     <packaging>pom</packaging>
     <name>camel-test</name>

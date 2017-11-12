@@ -3,6 +3,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="Osmorc" url="file://$PROJECT_DIR$/api" />
     <file type="Osmorc" url="file://$PROJECT_DIR$/simpleservice" />
+    <file type="Osmorc" url="file://$PROJECT_DIR$/time-api" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
