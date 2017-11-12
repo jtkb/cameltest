@@ -28,9 +28,10 @@
     <bean class="org.apache.camel.component.servlet.osgi.OsgiServletRegisterer"
           init-method="register"
           destroy-method="unregister">
-        <property name="alias" value="/camel-example-servlet-rest-blueprint/rest"/>
+        <property name="alias" value="/camel-example-servlet-rest-blueprint/rest/user"/>
         <property name="httpService" ref="httpService"/>
         <property name="servlet" ref="camelServlet"/>
+        <!--<property name="servletName" value="camelServletName" />-->
     </bean>
 
     <bean id="camelServlet" class="org.apache.camel.component.servlet.CamelHttpTransportServlet"/>
@@ -46,7 +47,7 @@
              You can access the RestRegistry from JMX at runtime -->
 
         <restConfiguration component="servlet" bindingMode="json"
-                           contextPath="/camel-example-servlet-rest-blueprint/rest"
+                           contextPath="/camel-example-servlet-rest-blueprint/rest/user"
                            port="8181">
             <dataFormatProperty key="prettyPrint" value="true"/>
         </restConfiguration>

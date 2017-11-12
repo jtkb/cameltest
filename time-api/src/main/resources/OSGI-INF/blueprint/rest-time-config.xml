@@ -28,14 +28,17 @@
     <bean class="org.apache.camel.component.servlet.osgi.OsgiServletRegisterer"
           init-method="register"
           destroy-method="unregister">
-        <property name="alias" value="/camel-example-servlet-rest-blueprint/rest/time"/>
+        <property name="alias" value="/camel-example-servlet-rest-blueprint/rest"/>
         <property name="httpService" ref="timeHttpService"/>
         <property name="servlet" ref="timeCamelServlet"/>
+        <property name="servletName" value="timeServlet" />
     </bean>
 
     <bean id="timeCamelServlet" class="org.apache.camel.component.servlet.CamelHttpTransportServlet" />
 
-    <camelContext xmlns="http://camel.apache.org/schema/blueprint" id="testRouteContext">
+    <camelContext xmlns="http://camel.apache.org/schema/blueprint" id="timeRouteContext"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://camel.apache.org/schema/blueprint http://camel.apache.org/schema/blueprint">
         <routeContextRef ref="timeRoutes"/>
         <!-- configure rest to use the camel-servlet component, and use json binding mode -->
         <!-- and tell to output json in pretty print mode -->
@@ -46,13 +49,15 @@
              You can access the RestRegistry from JMX at runtime -->
 
         <restConfiguration component="servlet" bindingMode="json"
-                           contextPath="/camel-example-servlet-rest-blueprint/rest/time"
+                           contextPath="/camel-example-servlet-rest-blueprint/rest"
                            port="8181">
+            <endpointProperty key="servletName" value="timeServlet" />
             <dataFormatProperty key="prettyPrint" value="true"/>
         </restConfiguration>
 
+
         <!-- defines the rest services using the context-path /user -->
-        <rest consumes="application/json" produces="application/json">
+        <rest consumes="application/json" produces="application/json" path="/time">
             <description>Time rest service</description>
 
             <!-- this is a rest GET to view an user by the given id -->
