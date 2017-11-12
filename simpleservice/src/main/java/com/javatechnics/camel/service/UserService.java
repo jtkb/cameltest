@@ -1,15 +1,15 @@
 package com.javatechnics.camel.service;
 
 
-import com.javatechnics.camel.User;
+import com.javatechnics.camel.dto.UserDto;
 
 import java.util.Collection;
 
 public interface UserService
 {
-    User getUser(final String id);
+    UserDto getUser(final String id);
 
-    Collection<User> listUsers();
+    Collection<UserDto> listUsers();
 
-    void updateUser(User user);
+    void updateUser(UserDto user);
 }

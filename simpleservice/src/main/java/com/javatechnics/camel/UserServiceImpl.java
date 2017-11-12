@@ -16,6 +16,7 @@
  */
 package com.javatechnics.camel;
 
+import com.javatechnics.camel.dto.UserDto;
 import com.javatechnics.camel.service.UserService;
 import org.apache.aries.blueprint.annotation.Bean;
 import org.apache.aries.blueprint.annotation.Service;
@@ -33,12 +34,12 @@ public class UserServiceImpl implements UserService
 {
 
     // use a tree map so they become sorted
-    private final Map<String, User> users = new TreeMap<String, User>();
+    private final Map<String, UserDto> users = new TreeMap<>();
 
     public UserServiceImpl()
     {
-        users.put("123", new User(123, "John Doe"));
-        users.put("456", new User(456, "K-Dog Kutz"));
+        users.put("123", new UserDto(123, "John Doe"));
+        users.put("456", new UserDto(456, "K-Dog Kutz"));
     }
 
     /**
@@ -48,7 +49,7 @@ public class UserServiceImpl implements UserService
      * @param id
      */
     @Override
-    public User getUser(final String id)
+    public UserDto getUser(final String id)
     {
         return users.get(id);
     }
@@ -59,7 +60,7 @@ public class UserServiceImpl implements UserService
      * @return the list of all users
      */
     @Override
-    public Collection<User> listUsers()
+    public Collection<UserDto> listUsers()
     {
         return users.values();
     }
@@ -70,7 +71,7 @@ public class UserServiceImpl implements UserService
      * @param user the user
      */
     @Override
-    public void updateUser(User user)
+    public void updateUser(UserDto user)
     {
         users.put("" + user.getId(), user);
     }

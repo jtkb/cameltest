@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="Osmorc" url="file://$PROJECT_DIR$/api" />
     <file type="Osmorc" url="file://$PROJECT_DIR$/simpleservice" />
   </component>
   <component name="MavenProjectsManager">
