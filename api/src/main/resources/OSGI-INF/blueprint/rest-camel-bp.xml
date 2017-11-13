@@ -31,10 +31,12 @@
         <property name="alias" value="/camel-example-servlet-rest-blueprint/rest/user"/>
         <property name="httpService" ref="httpService"/>
         <property name="servlet" ref="camelServlet"/>
-        <!--<property name="servletName" value="camelServletName" />-->
+        <property name="servletName" value="baseAPIServlet" />
     </bean>
 
-    <bean id="camelServlet" class="org.apache.camel.component.servlet.CamelHttpTransportServlet"/>
+    <bean id="camelServlet" class="org.apache.camel.component.servlet.CamelHttpTransportServlet" >
+        <property name="servletName" value="baseAPIServlet" />
+    </bean>
 
     <camelContext xmlns="http://camel.apache.org/schema/blueprint" id="testRouteContext">
         <routeContextRef ref="myRoutes" />
@@ -49,6 +51,7 @@
         <restConfiguration component="servlet" bindingMode="json"
                            contextPath="/camel-example-servlet-rest-blueprint/rest/user"
                            port="8181">
+            <endpointProperty key="servletName" value="baseAPIServlet" />
             <dataFormatProperty key="prettyPrint" value="true"/>
         </restConfiguration>
 
